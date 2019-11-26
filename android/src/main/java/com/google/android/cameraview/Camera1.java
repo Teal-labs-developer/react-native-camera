@@ -747,7 +747,7 @@ class Camera1 extends CameraViewImpl implements MediaRecorder.OnInfoListener,
                 // camera parameters are getting set by the same thread and process.
                 // https://stackoverflow.com/a/14855668/1777914
                 try{
-                    mCamera.setParameters(mCameraParameters);
+                    // mCamera.setParameters(mCameraParameters);
                 } catch (Exception e) {
                     Log.e("CAMERA_1::", "Record setParameters failed", e);
                 }
